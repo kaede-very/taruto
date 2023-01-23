@@ -1,0 +1,360 @@
+@charset "UTF-8";
+
+body{
+    background:#FFF100;
+    /*サイト全体フォント指定*/
+    font-family: YuGothic, "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    letter-spacing: .025em;
+    line-height: 1.8;
+    /*サイト全体フォント指定*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer{
+ clear: both;
+}
+
+.head{
+    text-align: center;
+    padding-bottom: 100px;
+    
+}
+.rogo{
+    width:200px;
+    margin: 0 auto;
+    padding: 20px 20px;  
+}
+.eay{
+    width: 80px;
+    max-width: 100%;
+}
+.nav{
+    background-color:#FFF100;
+}
+.nav .icon{
+    width: 40px;
+    margin-top: 10px;
+}
+.nav_item{
+    display: flex;
+    padding-left: 20px;
+}
+.nav_item .alert{
+    padding-bottom: 20px;
+}
+.pack{
+    width:85%;
+    margin-left: 40px;
+}
+.type{
+    margin-right: 40px;
+    text-align: justify;
+}
+.type2{
+    margin-right: 40px;
+    text-align: justify;
+}
+.type2 h1{
+    background:linear-gradient(transparent 70%, #00B4FF 0%);
+    display: inline;
+}
+.chara{
+    text-align: right;
+}
+.content1,.content2{
+     width: 50%;
+}
+.content1{
+    float: left;
+    margin-top:50px;
+    margin-bottom: 30px;
+}
+.content2{
+    float: right;
+    margin-top:50px;
+    margin-bottom: 30px;
+}
+.rogo2{
+    width:85%;
+    margin-left: 40px;
+    }
+.cardbody{
+    padding: 70px 0;
+}
+.twocols-container {
+	display: grid;
+	grid-template-columns: 7fr 3fr;
+	gap: 32px 25px;
+}
+
+.slideshow{
+    width:900px;
+    height: 300px;
+    margin-left: 40px;
+}
+
+.cardimg{
+    width: 300px;
+}
+.foot{
+    text-align: center;
+}
+
+.cols-peal{
+    background-color: #fff;
+    border-radius:25px;
+    border-width:10px;
+	border-color:#123F93;
+	border-style: solid;	
+    margin: 40px;
+}
+/*ボタン*/
+.btn{
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  margin-top:100px;
+  user-select: none;
+  transition: all 0.3s;
+  text-align: center;
+  color: #000;
+  border-radius: 1rem;
+}
+
+a.btn-custom01 {
+  margin-bottom: 0.5rem;
+  padding: 0;
+  border-radius: 0.75rem;
+}
+
+a.btn-custom01:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  content: "";
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translate3d(0, 0.75rem, -1rem);
+  transform: translate3d(0, 0.75rem, -1rem);
+
+  border: 2px solid #000;
+  border-radius: inherit;
+  background:#D5CA00;
+  -webkit-box-shadow: 0 0.6rem 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.6rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+a.btn-custom01:after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 1;
+  position: absolute;
+  top: calc(50% - 1rem);
+  left: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-custom01-front {
+  position: relative;
+  display: block;
+  padding: 1.5rem 5rem 1.5rem 5rem;
+
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 2px solid #000;
+  border-radius: inherit;
+  background:#FFF100;
+}
+
+a.btn-custom01:hover {
+  -webkit-transform: translate(0, 0.25rem);
+  transform: translate(0, 0.25rem);
+  background:#FFF100;
+}
+
+a.btn-custom01:hover:before {
+  -webkit-transform: translate3d(0, 0.5rem, -1rem);
+  transform: translate3d(0, 0.5rem, -1rem);
+  -webkit-box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+a.btn-custom01:active {
+  -webkit-transform: translate(0rem, 0.75rem);
+  transform: translate(0rem, 0.75rem);
+}
+
+a.btn-custom01:active:before {
+  -webkit-transform: translate3d(0, 0, -1rem);
+  transform: translate3d(0, 0, -1rem);
+  -webkit-box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+}
+/*ボタン*/
+
+/*スライドショー*/
+.slideshow{
+        display: flex;
+        overflow-x: scroll;
+        margin: 0;        
+        padding: 0;
+        min-width: 40%;
+}
+/*スライドショー*/
+
+/*スクロールダウン*/
+.scrolldown4{
+    /*描画位置*/
+	position:absolute;
+    left:50%;
+	top:200px;
+    /*矢印の動き1秒かけて永遠にループ*/
+	animation: arrowmove 1s ease-in-out infinite;
+}
+
+/*下からの距離が変化して全体が下→上→下に動く*/
+@keyframes arrowmove{
+      0%{top:1%;}
+      50%{top:3%;}
+     100%{top:1%;}
+ }
+
+/*Scrollテキストの描写*/
+.scrolldown4 span{
+    /*描画位置*/
+	position: absolute;
+	left:-20px;
+	top:160px;
+    /*テキストの形状*/
+	color: #000;
+	font-size: 0.8rem;
+	letter-spacing: 0.05em;
+	/*縦書き設定*/
+	-ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+/* 矢印の描写 */
+.scrolldown4:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    top: 190px;
+    right: -6px;
+    /*矢印の形状*/
+    width: 1px;
+    height: 20px;
+    background: #000;
+    transform: skewX(-31deg);
+}
+
+.scrolldown4:after{
+	content:"";
+    /*描画位置*/
+	position: absolute;
+	top:160px;
+	right:0;
+    /*矢印の形状*/
+	width:1px;
+	height: 50px;
+	background:#000;
+}
+/*スクロールダウン*/
+
+
+/*レスポンシブ*/
+@media all and (max-width: 767px) {
+    
+  .main{
+    width: 90%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    display: block;
+  }
+  .head:before{
+      content:"";
+      display: flex;
+    }
+    .head{
+        padding-bottom: 50px;
+    }
+ .rogo{
+    width:150px;
+    margin: 0 auto;
+    padding: 20px 20px;  
+}
+ .eay{
+        width: 60px;
+        max-width: 100%;
+    }
+  .content1{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content2{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+   .chara{
+        text-align: center;
+    }
+    .twocols-container {
+	display: grid;
+	grid-template-columns:1fr;
+	
+}
+    .cols-peal{
+        width: 360px;
+        height: auto;
+        margin: 0;
+        padding: 20px;
+    }
+    .first-line{
+        text-align: center;
+    }
+    .rogo2{
+        margin-left: 30px;
+    }
+    .type2{
+        text-align: justify;
+        margin-right: 0;
+        padding: 0 20px;
+    }
+    .btn{
+        width: 90%;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .slideshow{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn-custom01-front{
+        text-align: justify;
+    }
+    .cardbody{
+        padding: 0;
+        padding-top: 30px;
+    }
+    
+}
+ 
